@@ -1,0 +1,312 @@
+@import url('./partial/reset.css');
+@import url('./partial/nav.css');
+@import url('./partial/information.css');
+
+
+/* Hero Section */
+
+.hero-section {
+  background: url('../images/background.png');
+  background-size: cover;
+  background-position: 420px 50px;
+  height: 100vh;
+  padding: 0 1.5em;
+  display: grid;
+  align-items: center;
+}
+
+.wrapper-title {
+  max-width: 14em;
+}
+
+.title h1 {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin-bottom: 0.3em;
+}
+
+.title p {
+  font-size: 1rem;
+}
+
+/* 
+  Main
+  About
+*/
+
+main {
+  background-color: #8990D3;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+main .about{
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+main .about .about-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+main .about p {
+  font-size: 1em;
+  order: 2;
+  margin-bottom: 3em;
+}
+
+main .about img {
+  order: 1;
+  display: block;
+  margin: 1em auto 1.5em;
+  width: auto;
+  height: 18em;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* 
+  Main
+  Circle
+*/
+.circle {
+  background: #D8ABC8;
+  position: absolute;
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  z-index: -1; 
+}
+
+.circle:nth-child(1) {
+  top: 0;
+  right: 0;
+  transform: translateX(10em);
+}
+
+.circle:nth-child(2) {
+  top: 25%;
+  transform: translateX(-10em); 
+}
+
+.circle:nth-child(3) {
+  top: 65%;
+  right: 0;
+  transform: translateX(10em); 
+}
+
+/* 
+  Main 
+  Product Populer
+*/
+
+.product {
+  padding: 5em 1em;
+}
+
+.items .item {
+  background-color: #fff;
+  margin: 2em auto;
+  width: 15em;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.329);
+  transition: box-shadow .2s ease-in-out;
+}
+
+.items .item a {
+  text-decoration: none;
+  color: #000;
+}
+
+.items .item:hover {
+  box-shadow: none;
+}
+
+.item .item-text {
+  padding: 0.5em 1em;
+}
+
+.items .item .produk {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+  height: 14em;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.items .item .title {
+  font-weight: 400;
+}
+
+.items .item h2 {
+  font-size: 1.6em;
+}
+
+.items .item .cabang {
+  margin: 8px 0;
+}
+
+.items .item .stars {
+  display: flex;
+  align-items: flex-start;
+}
+
+.stars span img {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.items .item .sell {
+  margin-left: 5px;
+  font-size: 0.8em;
+}
+
+@media screen and (min-width: 600px) {
+  /* Hero Section */
+  .hero-section {
+    background-position: center;
+    padding: 0 3em;
+  }
+
+  .wrapper-title {
+    max-width: 50em;
+  }
+
+  .title h1 {
+    font-size: 2.3rem;
+  }
+
+  .title p {
+    font-size: 1.2rem;
+  }
+
+  /* Main */
+  main {
+    padding: 8em 0 0;
+  }
+  main .about {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  main .about .about-inner {
+    display: grid;
+    column-gap: 30px;
+    align-items: center;
+    grid-template-areas: 
+      'title title image'
+      'description description image'
+    ;
+  }
+  main .about h1 {
+    align-self: end;
+    grid-area: title;
+    font-size: 3em;
+  }
+  main .about p {
+    grid-area: description;
+  }
+  main .about img {
+    grid-area: image;
+    min-height: 18em;
+  }
+
+  /* Product */
+  .product {
+    display: block;
+    margin: 0 auto;
+  }
+  .product h1 {
+    text-align: center;
+  }  
+  .items {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 300px));
+    justify-content: center;
+    justify-items: center;
+  }
+  .items .item {
+    width: 11em;
+  }
+  .items .item h2 {
+    font-size: 1.3em;
+  }
+  .stars span img {
+    width: 1.2em;
+    height: 1.2em;
+  }
+  .items .item .produk{
+    height: 10em;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* Hero Section */
+  .wrapper-title {
+    max-width: 55em;
+  }
+  .title h1 {
+    font-size: 3rem;
+  }
+  
+  .title p {
+    font-size: 1.4rem;
+  }
+
+  /* Main Circle */
+  .circle {
+    width: 30em;
+    height: 30em;
+  }
+  .circle:nth-child(1) {
+    transform: translateX(15em);
+  }
+  /* Main About */
+  main .about p {
+    font-size: 1.2em;
+    max-width: 30em;
+  }
+  main .about img {
+    height: 24em;
+  }
+  /* Product */
+  .product {
+    padding: 7em 1em;
+  }
+  .product h1 {
+    font-size: 2.4rem;
+  }
+  .items {
+    margin-top: 1em;
+  }
+  .items .item {
+    width: 15em;
+  }
+  .items .item .produk{
+    height: 13em;
+  }
+  .items .item h2 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* Main About */
+  main .about p {
+    margin-top: -3em;
+  }
+  main .about img {
+    height: 31em;
+  }
+
+  /* Product */
+  .items {
+    gap: 4em;
+  }
+  .items .item {
+    width: 16em;
+  }
+
+  .items .item .produk{
+    height: 15em;
+  }
+}

@@ -1,0 +1,148 @@
+/* 
+  Main 
+  Information
+*/
+
+.information {
+  background-color: #D8ABC8;
+  padding: 4em 2em 0;
+}
+
+.information .logo {
+  display: flex;
+  align-items: center;
+}
+
+.information .logo img {
+  width: 4em;
+  height: 4em;
+}
+
+.wrapper {
+  max-width: 25em;
+}
+
+.wrapper .wrapper-inner {
+  margin: 1.5em 0;
+}
+
+.wrapper .wrapper-inner a{
+  text-decoration: none;
+  display: block;
+  color: #191A19;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.wrapper .wrapper-inner a:hover {
+  text-decoration: underline;
+}
+
+.wrapper .wrapper-inner .social-media {
+  margin: 2em 0;
+}
+
+.wrapper .wrapper-inner .social-media a{
+  text-decoration: none;
+  align-items: center;
+}
+
+.wrapper .wrapper-inner .location {
+  align-items: flex-start;
+}
+
+.wrapper .wrapper-inner .social-media a, .wrapper .wrapper-inner .location {
+  display: flex;
+  gap: 0.5em;
+  font-size: 1em;
+}
+
+.wrapper .wrapper-inner a, .wrapper .wrapper-inner span {
+  margin: 0 0 0.8em;   
+}
+
+.wrapper .wrapper-inner .location img {
+  width: 1.7em;
+  height: 1.7em;
+}
+
+.wrapper .maps iframe {
+  width: 100%;
+  height: 15em;
+}
+
+footer {
+  background-color: #D8ABC8;
+  text-align: center;
+  padding: 3em 0 1em;
+}
+
+@media screen and(min-width: 600px) {
+  /* Information */
+  .wrapper {
+    max-width: 50em;
+  }
+  .wrapper .wrapper-inner {
+    display: flex;
+    gap: 1em 1.5em;
+  }
+
+  .wrapper .wrapper-inner .social-media {
+    margin: 0;
+  }
+
+  .wrapper .wrapper-inner .location {
+    flex-basis:  300px;
+  }
+  .wrapper .maps iframe {
+    height: 20em;
+  }
+
+  footer {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  /* Information */
+  .wrapper {
+    max-width: 64em;
+    display: grid;
+    grid-template-areas: 
+    'Judul Maps Maps'
+    'Text Maps Maps';
+  }
+
+  .wrapper .logo {
+    grid-area: Judul;
+  }
+
+  .wrapper .wrapper-inner {
+    margin-top: -1em;
+    grid-area: Text;
+  }
+
+  .wrapper .maps {
+    grid-area: Maps;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* Information */
+  .wrapper {
+    margin: 0 auto;
+    max-width: 74em;
+  }
+
+  .wrapper .wrapper-inner {
+    margin-top: -2em;
+  }
+
+  .wrapper .wrapper-inner .social-media {
+    margin: 0 3em;
+  }
+  .wrapper .maps iframe {
+    width: 30em;
+    height: 25em;
+  }
+}
