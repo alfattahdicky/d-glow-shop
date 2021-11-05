@@ -7,7 +7,7 @@ main {
 }
 
 .profile {
-  padding: 3em 2em;
+  padding: 3em 1.3em 0;
 }
 
 .picture {
@@ -59,6 +59,16 @@ main {
   align-items: center;
 }
 
+.change-name button, .change-hp button {
+  background-color: transparent;
+  color: #414A60;
+  transition: color .3s ease-in;
+}
+
+.change-name button:hover, .change-hp button:hover {
+  color: #D8ABC8;
+}
+
 .gender,.email {
   margin: 1em 0;
 }
@@ -70,3 +80,113 @@ main {
   font-size: 1rem;
   background: #D3DFFD;
 }
+
+.item-user h1{
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.items-user {
+  margin-top: 1em;
+}
+
+.items-user .item {
+  display: flex;
+  align-items: center;
+  margin: 1em 0 0;
+  column-gap: 0.8em;
+}
+
+.items-user .item img {
+  max-width: 8em;
+  height: auto;
+}
+
+.items-user .item-text .name-product{
+  font-size: 1.1rem;
+}
+
+.items-user .item-text h4 {
+  font-size: 1.4rem;
+}
+
+.items-user .item-text .branch-product {
+  font-size: 0.8rem;
+}
+
+.items-user .item-text .progress-item {
+  margin-top: .5rem;
+  font-size: 0.7rem;
+  font-style: italic;
+  color: #8990D3;
+}
+
+@media screen and (min-width: 600px) {
+  .profile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3em;
+  }
+
+  .item-user {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .change-picture .background img {
+    height: 17em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .profile {
+    gap: 2em;
+    flex-direction: row;
+  }
+  .wrapper {
+    gap: 0 3em;
+  }
+
+  .bio h1 {
+    font-size: 1.5rem;
+  }
+  .item-user {
+    background-color: rgba(248,243,243,0.5);
+    padding: 2.2em 2.5em 0;
+    border-radius: 50px;
+  }
+  .item-user h1{
+    font-size: 1.6rem;
+  }
+  .items-user {
+    margin-top: 1.5em;
+  }
+  .items-user .item img {
+    max-width: 6em;
+  }
+  .items-user .item-text .name-product{
+    font-size: 1rem;
+  }
+  .items-user .item-text h4 {
+    font-size: 1.2rem;
+  }
+  .items-user .item-text .branch-product {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bio {
+    max-width: 22em;
+  }
+  .wrapper-bio .name, .wrapper-bio .gender, .wrapper-bio .hp, .wrapper-bio .email{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .wrapper-bio .name span:nth-child(2), .wrapper-bio .gender:nth-child(2), .wrapper-bio .hp:nth-child(2), .wrapper-bio .email:nth-child(2) {
+    justify-self : end;
+  }
+}
+
+

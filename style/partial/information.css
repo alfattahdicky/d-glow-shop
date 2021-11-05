@@ -77,36 +77,10 @@ footer {
   padding: 3em 0 1em;
 }
 
-@media screen and(min-width: 600px) {
+@media screen and (min-width: 600px) {
   /* Information */
   .wrapper {
     max-width: 50em;
-  }
-  .wrapper .wrapper-inner {
-    display: flex;
-    gap: 1em 1.5em;
-  }
-
-  .wrapper .wrapper-inner .social-media {
-    margin: 0;
-  }
-
-  .wrapper .wrapper-inner .location {
-    flex-basis:  300px;
-  }
-  .wrapper .maps iframe {
-    height: 20em;
-  }
-
-  footer {
-    font-size: 1.2rem;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  /* Information */
-  .wrapper {
-    max-width: 64em;
     display: grid;
     grid-template-areas: 
     'Judul Maps Maps'
@@ -125,6 +99,34 @@ footer {
   .wrapper .maps {
     grid-area: Maps;
   }
+
+  .wrapper .wrapper-inner {
+    display: flex;
+    gap: 1em 1.5em;
+  }
+
+  .wrapper .wrapper-inner .social-media {
+    margin: 0;
+  }
+  .wrapper .wrapper-inner .location {
+    flex-basis:  300px;
+  }
+  .wrapper .maps iframe {
+    height: 20em;
+  }
+  footer {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  /* Information */
+  .wrapper {
+    max-width: 64em;
+    
+  }
+
+
 }
 
 @media screen and (min-width: 1200px) {
