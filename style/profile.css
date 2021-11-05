@@ -2,3 +2,67 @@
 @import url('./partial/reset.css');
 @import url('./partial/nav.css');
 
+main {
+  background: linear-gradient(225deg, #C9DFFC, #F8ECFA 60%);
+}
+
+.profile {
+  padding: 3em 2em;
+}
+
+.picture {
+  max-width: 16em;
+}
+
+.picture .icon {
+  display: flex;
+  align-items: center;
+}
+
+.change-picture .background {
+  padding: 1em 0;
+}
+
+.change-picture .background img {
+  background: #ffffff;
+  width: 16em;
+  height: 16em;
+}
+
+.change-picture .btn-choose {
+  background: #D3DFFD;
+  width: 100%;
+  padding: 0.8em 0;
+  font-size: 1.2rem;
+}
+
+.bio {
+  padding: 3em 0 4em;
+  max-width: 18em;
+}
+
+.bio h1 {
+  font-size: 2em;
+}
+
+.wrapper-bio span {
+  display: block;
+}
+
+.change-name, .change-hp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gender,.email {
+  margin: 1em 0;
+}
+
+.wrapper-bio .change-sandi {
+  margin-top: 1em;
+  width: 100%;
+  padding: 1em 0;
+  font-size: 1rem;
+  background: #D3DFFD;
+}
