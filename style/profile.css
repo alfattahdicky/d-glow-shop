@@ -45,6 +45,10 @@ main {
   font-size: 2em;
 }
 
+.wrapper-bio {
+  margin: 0.8em 0;
+}
+
 .wrapper-bio span {
   display: block;
 }
