@@ -4,6 +4,7 @@
 
 main {
   background: linear-gradient(225deg, #C9DFFC, #F8ECFA 60%);
+  padding: 4em 0 0;
 }
 
 .profile {
@@ -20,11 +21,13 @@ main {
 }
 
 .change-picture .background {
+  background: #D3DFFD;
+  margin: 1em 0;
   padding: 1em 0;
 }
 
 .change-picture .background img {
-  background: #ffffff;
+  margin-top: 1em;
   width: 16em;
   height: 16em;
 }
@@ -36,8 +39,21 @@ main {
   font-size: 1.2rem;
 }
 
+.wrapper-bio .change-sandi {
+  margin-top: 1em;
+  width: 100%;
+  padding: 1em 0;
+  font-size: 1rem;
+  background-color: #D3DFFD;
+  transition: background-color .2s ease-in-out;
+}
+
+.change-picture .btn-choose:hover, .wrapper-bio .change-sandi:hover {
+  background-color: #D8ABC8;
+}
+
 .bio {
-  padding: 3em 0 4em;
+  padding: 3em 0.5em 4em;
   max-width: 18em;
 }
 
@@ -54,12 +70,18 @@ main {
 }
 
 .change-name, .change-hp {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
   align-items: center;
 }
 
+.change-name span:nth-child(2), .change-hp span:nth-child(2) {
+  order: 2;
+} 
+
 .change-name button, .change-hp button {
+  order: 1;
+  justify-self: end;
   background-color: transparent;
   color: #414A60;
   transition: color .3s ease-in;
@@ -73,12 +95,9 @@ main {
   margin: 1em 0;
 }
 
-.wrapper-bio .change-sandi {
-  margin-top: 1em;
-  width: 100%;
-  padding: 1em 0;
-  font-size: 1rem;
-  background: #D3DFFD;
+
+.item-user {
+  padding-bottom: 2em;
 }
 
 .item-user h1{
@@ -93,7 +112,7 @@ main {
 .items-user .item {
   display: flex;
   align-items: center;
-  margin: 1em 0 0;
+  margin: 2em 0 0;
   column-gap: 0.8em;
 }
 
@@ -126,7 +145,11 @@ main {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 3em;
+    padding: 2em;
+  }
+
+  .wrapper {
+    gap: 0 1em;
   }
 
   .item-user {
@@ -135,7 +158,7 @@ main {
   }
 
   .change-picture .background img {
-    height: 17em;
+    height: 15em;
   }
 }
 
@@ -145,31 +168,31 @@ main {
     flex-direction: row;
   }
   .wrapper {
-    gap: 0 3em;
+    gap: 0 2em;
   }
 
   .bio h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .item-user {
     background-color: rgba(248,243,243,0.5);
-    padding: 2.2em 2.5em 0;
+    padding: 2em;
     border-radius: 50px;
   }
   .item-user h1{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .items-user {
-    margin-top: 1.5em;
+    margin-top: 1em;
   }
   .items-user .item img {
     max-width: 6em;
   }
   .items-user .item-text .name-product{
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .items-user .item-text h4 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .items-user .item-text .branch-product {
     font-size: 0.7rem;
@@ -177,16 +200,56 @@ main {
 }
 
 @media screen and (min-width: 1200px) {
+  .profile {
+    padding: 4em 0 2em;
+  }
   .bio {
+    margin-left: 3em;
     max-width: 22em;
   }
-  .wrapper-bio .name, .wrapper-bio .gender, .wrapper-bio .hp, .wrapper-bio .email{
+
+  .item-user {
+    padding: 2.5em 3em;
+  }
+  
+  .items-user .item img {
+    max-width: 8em;
+  }
+
+  .items-user .item-text .name-product{
+    font-size: 1.2rem;
+  }
+  .items-user .item-text h4 {
+    font-size: 1.4rem;
+  }
+  .items-user .item-text .branch-product {
+    font-size: 0.8rem;
+  }
+
+  .items-user .item-text .progress-item {
+    font-size: 1rem;
+  }
+
+  .wrapper-bio span {
+    display: inline-block;
+  }
+
+  .wrapper-bio .email {
+    gap: 0 4.5em;
+  }
+
+  .change-name span:nth-child(2), .change-hp span:nth-child(2) {
+    order: 1;
+  } 
+  
+  .change-name button, .change-hp button {
+    order: 2;
+  }
+  .wrapper-bio .change-name, .wrapper-bio .gender, .wrapper-bio .change-hp,.wrapper-bio .email  {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
-  .wrapper-bio .name span:nth-child(2), .wrapper-bio .gender:nth-child(2), .wrapper-bio .hp:nth-child(2), .wrapper-bio .email:nth-child(2) {
-    justify-self : end;
-  }
+
 }
 
 

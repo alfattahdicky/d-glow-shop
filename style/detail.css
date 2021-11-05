@@ -1,0 +1,41 @@
+@import url('./partial/nav.css');
+@import url('./partial/reset.css');
+
+.navbar-desktop {
+  display: none;
+}
+
+.navbar-mobile {
+  padding: 1.8em 1em 0;
+}
+
+.navbar-mobile .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back, .shop {
+  display: flex;
+  align-items: center;
+}
+
+.back p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-left: 0.6em;
+}
+
+.shop p {
+  display: none;
+}
+
+main .detail-product {
+  padding-top:2em;
+}
+
+.picture-product img {
+  width: 100%;
+}
+
+
