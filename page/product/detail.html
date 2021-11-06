@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../style/detail.css">
+  <link rel="icon" type="image/png" href="../../images/logo.png">
   <title>Detail Produk</title>
 </head>
 
@@ -37,27 +38,79 @@
 
   <div class="navbar-mobile">
     <div class="wrapper">
-      <div class="back">
-        <img src="../../icons/back.svg" alt="Back">
-        <p>Back</p>
-      </div>
-      <div class="shop">
-        <img src="../../icons/shopping.svg" alt="Shopping">
-        <p>Belanja Lagi Yuk</p>
-      </div>
+      <a href="">
+        <div class="back">
+          <img src="../../icons/back.svg" alt="Back">
+          <p>Back</p>
+        </div>
+      </a>
+      <a href="">
+        <div class="shop">
+          <img src="../../icons/shopping.svg" alt="Shopping">
+          <p>Belanja Lagi Yuk</p>
+        </div>
+      </a>
     </div>
   </div>
 
   <main>
+    <div class="circle"></div>
+    <div class="circle"></div>
     <section class="detail-product">
-      <div class="wrapper">
+      <article class="wrapper">
         <img class="pic-product" src="../../images/Produk 4.png" alt="Produk 4">
-        <div class="detail">
-          <p class="price">Rp. 60.000</p>
-          <p class="name-product">Serum</p>
-          <p>Terjual 50 <span><img src="../../icons/star.png" alt="Star"> 4.5</span></p>
+        <div class="wrapper-logo">
+          <a href="">
+            <div class="shop">
+              <img src="../../icons/shopping.svg" alt="Shopping">
+              <p>Belanja Lagi Yuk</p>
+            </div>
+          </a>
+          <div class="detail">
+            <h3 class="price">Rp. 60.000</h3>
+            <p class="name-product">Serum</p>
+            <div class="group-sell">
+              <p class="sell">Terjual 50</p>
+              <span><img src="../../icons/star.png" alt="Star"> 4.5</span>
+            </div>
+          </div>
+          <div class="logo">
+            <img src="../../images/logo.png" alt="Logo">
+            <div class="text">
+              <span>D'Glow Shop</span>
+              <span>Cabang Bandung</span>
+            </div>
+          </div>
         </div>
-      </div>
+      </article>
+      <article class="decription-product">
+        <div class="text">
+          <h3>Detail</h3>
+          <div class="spek">
+            <span>Kondisi : Baru</span>
+            <span>Berat : 500 gram</span>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum facere deleniti voluptatum commodi
+            laudantium natus iste explicabo numquam deserunt nostrum et sed, at voluptatibus incidunt, distinctio nemo
+            reiciendis aspernatur vero quas? Consectetur accusamus quas dicta laborum beatae perferendis totam amet?</p>
+        </div>
+
+        <div class="wrap">
+          <div class="quantity">
+            <p>Kuantitas</p>
+            <div class="group">
+              <span class="decrement">-</span>
+              <span class="number">1</span>
+              <span class="increment">+</span>
+            </div>
+          </div>
+
+          <div class="group-button">
+            <a href="">Beli Sekarang</a>
+            <a href="">Masukkan Whislist</a>
+          </div>
+        </div>
+      </article>
     </section>
   </main>
 
