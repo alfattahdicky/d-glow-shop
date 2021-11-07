@@ -277,6 +277,9 @@ main .detail-product {
   body {
     overflow: hidden;
   }
+  .back {
+    display: none;
+  }
   .wrapper {
     padding-left: 2em;
   }

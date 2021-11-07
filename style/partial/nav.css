@@ -1,3 +1,7 @@
+header {
+  position: relative;
+}
+
 /* styling nav */
 nav {
   background-color: #8990D3;
@@ -22,6 +26,11 @@ nav .logo {
 
 nav .logo h3{
   font-size: 1.5em;
+}
+
+nav .logo h3 a {
+  text-decoration: none;
+  color: #000;
 }
 
 nav .logo img {
@@ -51,6 +60,66 @@ nav ul li a:hover {
 nav .hamburger, nav .nav-list .close {
   display: none;
 }
+
+.notifikasi {
+  position: fixed;
+  z-index: 5;
+  top:5em;
+  right:4em;
+  overflow-y: scroll;
+  background: #A5A6F6;
+  width: 30em;
+  height: 40em;
+  padding: 1em 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.185);
+  display: none;
+}
+
+.notifikasi.open {
+  display: block;
+}
+
+.wrap a {
+  text-decoration: none;
+  color: #000;
+}
+
+.list {
+  padding: 0 1.5em;
+}
+
+.list h1 {
+  margin-bottom: 0.5em;
+}
+
+.list .notif{
+  background-color: #989cd8;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 0 1em;
+  margin: 1em 0;
+}
+
+.notif .text-notif {
+  padding: 0.5em 0;
+}
+
+.notif h2 {
+  font-size: 1em;
+}
+
+.notif p {
+  font-size: 0.8em;
+}
+
+.notif img {
+  width: auto;
+  height: 4em;
+  object-fit: cover;
+  object-position: center;
+}
+
 
 @media screen and (max-width: 600px) {
   nav {

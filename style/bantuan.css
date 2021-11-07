@@ -1,0 +1,160 @@
+@import url('./partial/nav.css');
+@import url('./partial/reset.css');
+
+body {
+  background-image: linear-gradient(45deg, #F8EDF9,  #C9DEFD);
+  width: 100%;
+  height: 100vh;
+}
+
+article {
+  padding: 6em 0 1em;
+}
+
+.border{
+  border-bottom: 1px solid #FEC8E8;
+  border-width: 2px;
+  margin-bottom: 8px;
+}
+
+#garis_0 {
+  padding-left: 20px;
+}
+
+p {
+  padding-left: 20px;
+}
+
+#garis_0{
+  color: grey;
+}
+#garis_1{
+  text-align: justify;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.kontak{
+  margin-bottom: 2px;
+}
+
+.nomor1{
+  margin-top: 3px;
+}
+
+ol {
+  margin-left: 40px;
+  margin-bottom: 6px;
+  margin-top: 2px;
+}
+
+.border1{
+  border-bottom: 1px solid #E0BBE4;
+  border-width: 2px;
+  margin-bottom: 8px;
+}
+
+#garis_2{
+  text-align: justify;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+  .estimasi{
+    text-align: justify;
+    margin-right: 40px;
+  }
+
+#garis_3{
+  text-align: justify;
+  font-weight: bold;
+  margin-bottom: 2px;
+  }
+
+#garis_4{
+  text-align: justify;
+  font-weight: bold;
+  margin-bottom: 2px;
+  }
+
+.hubungi{
+  font-size: 14px;
+  margin-top: -2px;
+  margin-bottom: 4px;
+}
+
+.instagram {
+  width: 90%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+
+}
+.img-instagram {
+  height: 40%;
+  width: 15px;
+  margin-left: 20px;
+  margin-top: -2px;
+
+}
+  .nama2 {
+    display: inline-block;
+    padding-left: 5px;
+    margin-top: -3px;
+    font-size: 12px;
+    font-family: sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .facebook {
+    width: 90%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+
+  }
+  .img-facebook {
+    height: 40%;
+    width: 15px;
+    margin-left: 20px;
+    margin-top: 5px;
+
+  }
+  .nama3 {
+    display: inline-block;
+    padding-left: 5px;
+    margin: 0px;
+    font-size: 12px;
+    font-family: sans-serif;
+    margin-top: 6px;
+    }
+
+  .twitter {
+    width: 90%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+  
+    }
+
+  .img-twitter {
+    height: 40%;
+    width: 15px;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+
+  .nama4 {
+    display: inline-block;
+    padding-left: 5px;
+    margin: 0px;
+    font-size: 12px;
+    font-family: sans-serif;
+    margin-top: 6px;
+  }

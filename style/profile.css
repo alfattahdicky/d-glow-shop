@@ -7,6 +7,11 @@ main {
   padding: 4em 0 0;
 }
 
+.back {
+  margin-top: 4em;
+  display: block;
+}
+
 .profile {
   padding: 3em 1.3em 0;
 }

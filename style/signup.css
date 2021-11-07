@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    background-image: url(/images/daftar.png);
+    background-size: cover;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.formdaftar{
+    position: fixed;
+    top: 50%;
+    left: 20%;
+    transform: translate(-0%, -50%);
+    background-color: #FF9BA6;
+    padding: 5%;
+    width: 200px;
+    height: 300px;
+    box-shadow: -5px -2px 5px 5px #f3cfd3;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.formdaftar h1{
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    margin: 5px;
+}
+
+.gambar{
+    position: fixed;
+    top: 20%;
+    right: 20%;
+}
+
+.gambar button{
+    position: fixed;
+    bottom: 25%;
+    right: 22%;
+    text-align: center;
+    background-color: #FF9BA6;
+    width: 250px;
+    border: black;
+    border-radius: 5px;
+    border-style: groove;
+    color: black;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.gambar button a{
+    text-decoration: none;
+    color: #000;
+}
+
+.gambar h3{
+    position: fixed;
+    bottom: 18%;
+    right: 26%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 19px;
+    font-weight: lighter;
+}
+
+.img-logo{
+    position: fixed;
+    top: 19%;
+    right: 20%;
+    width: 300px;
+    height: auto;
+    object-position: center;
+    object-fit: cover;
+}

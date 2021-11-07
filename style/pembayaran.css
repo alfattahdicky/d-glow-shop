@@ -1,0 +1,437 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  background-image: url('../images/baground1.jpg');
+  background-repeat: no-repeat;
+  position: center;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+}
+.navbar{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  position: fixed;
+  z-index: 99;
+  border-radius: 11px;
+}
+.logo {
+  width: 20%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+.img-logo {
+  height: 70%;
+  margin-left: 10px;
+}
+
+.menu {
+  width: 80%;
+  height: 100%;
+}
+.menu ul {
+  list-style-type: none;
+  float: right;
+  margin: 8px 0 8px 0;
+  padding-left: 5px;
+}
+.menu ul li{
+  float: left;
+  padding: 20px;
+  margin-top: -10px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+.menu ul li:hover{
+  background-color: darkturquoise;
+  border-radius: 5px;
+}
+.gambar {
+  width: 100%;
+  height: 100%;
+}
+.nama {
+  display: inline-block;
+  padding-left: 2px;
+  margin: 0px;
+  font-size: 20px;
+  color: black;
+  font-family: serif;
+}
+
+.alamat {
+  width: 100%;
+  height: 30%;
+  padding: 0 1em;
+  background-color: transparent;
+  margin-top: 0.6em;
+}
+
+.alamat .text {
+  display: flex;
+  align-items: center;
+}
+
+.alamat .text img {
+  width: 30px;
+}
+
+.img-alamat {
+  height: 70%;
+  width: 10%;
+  margin-top: 20px ;
+}
+
+.nama1 {
+  display: block;
+  padding-left: 2px;
+  margin: 0px;
+  font-size: 15px;
+  color: black;
+  font-family: serif;
+  padding-top: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  padding: 1em;
+  resize: none;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.border{
+  border-bottom: 1px dashed;
+  border-width: 2px;
+  margin-bottom: 8px;
+  margin-top: 5px;
+  border-color: #F79CB1;
+}
+
+.barang{
+  width: 100%;
+  border-radius: 5px;
+  background-color: white;
+  padding: 5px 1em;
+}
+
+form label{
+  color: #000;
+  font-family: sans-serif;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: orangered;
+}
+
+.voucher {
+  width: 20%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+.img-voucher {
+  height: 70%;
+  width: 25%;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+.nama2 {
+  display: inline-block;
+  padding-left: 2px;
+  margin: 0px;
+  font-size: 12px;
+  color: black;
+  font-family: serif;
+  padding-top: 10px;
+  letter-spacing: 1px;
+}
+
+.pengiriman{
+  width: 100%;
+  background-color: #F79CB1;
+  padding: 2px 0;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  margin-top: 5px;
+}
+
+.border1{
+  border-bottom: 1px solid;
+  border-width: 3px;
+  margin-bottom: 8px;
+  border-color: #97A2FF;
+}
+
+textarea.opsipengiriman{
+  margin-top: -8px;
+  background: #F79CB1;
+  border: 1px solid #F79CB1;
+}
+
+label{
+  margin-left: 15px;
+  font-family: sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.pembayaran {
+  width: 20%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+.img-pembayaran {
+  height: 70%;
+  width: 15%;
+  margin-left: 1px;
+  margin-top: 5px;
+}
+.nama3 {
+  display: inline-block;
+  padding-left: 2px;
+  margin-top: -10px;
+  font-size: 14px;
+  color: black;
+  font-family: serif;
+
+}
+
+input[type="radio"]{
+  display: none;
+
+}
+
+.radio-button{
+  display: flex;
+}
+
+.radio-btn{
+  width: 100px;
+  height: 60px;
+  padding: 7px 8px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 27px;
+  margin-top: -15px;
+}
+
+.radio-btn img{
+  width: 80px;
+  float: right;
+  display: flex;
+}
+
+.radio-content .radio-title span{
+  display: inline-block;
+  text-transform: capitalize;
+  vertical-align: middle;
+}
+
+input:checked + .radio-btn{
+  border: 2px solid #136ad5;
+}
+
+.ewallet-btn{
+  width: 100px;
+  height: 60px;
+  padding: 7px 8px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: -2px;
+  margin-top: -15px;
+}
+
+.ewallet-btn img{
+  width: 80px;
+  float: right;
+  display: flex;
+
+}
+
+input:checked + .ewallet-btn{
+  border: 2px solid #136ad5;
+}
+
+.mandiri-btn{
+  width: 100px;
+  height: 60px;
+  padding: 7px 8px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: -2px;
+  margin-top: -15px;
+}
+
+.mandiri-btn img{
+  width: 85px;
+  float: right;
+  display: flex;
+}
+
+input:checked + .mandiri-btn{
+  border: 2px solid #136ad5;
+}
+
+.bni-btn{
+  width: 100px;
+  height: 60px;
+  padding: 7px 8px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: -2px;
+  margin-top: -15px;
+}
+
+.bni-btn img{
+  width: 90px;
+  float: right;
+  display: flex;
+
+}
+
+input:checked + .bni-btn{
+  border: 2px solid #136ad5;
+}
+
+.bca-btn{
+  width: 100px;
+  height: 60px;
+  padding: 7px 8px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-left: -2px;
+  margin-top: -15px;
+}
+
+.bca-btn img{
+  width: 90px;
+  float: right;
+  display: flex;
+}
+
+input:checked + .bca-btn{
+  border: 2px solid #136ad5;
+}
+
+.produk{
+  font-size: 15px;
+  font-family: sans-serif;
+  color: orangered;
+  margin-left: 42px;
+  margin-top: 20px;
+}
+
+.nama4 {
+  display: inline-block;
+  padding-left: 2px;
+  font-size: 14px;
+  color:orangered;
+  font-family: serif;
+  margin-left: 804px;
+
+}
+
+input[type=jumlah]{
+  padding: 5px 10px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid transparent;
+  font-weight: bold;
+  color: orangered;
+}
+
+.subtotalpengiriman{
+  font-size: 15px;
+  font-family: sans-serif;
+  color: orangered;
+  margin-left: 42px;
+  margin-top: 2px;
+}
+
+.nama5 {
+  display: inline-block;
+  padding-left: 2px;
+  font-size: 14px;
+  color:orangered;
+  font-family: serif;
+  margin-left: 777px;
+
+}
+
+input[type=subtotal]{
+  padding: 5px 10px;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid transparent;
+  color: orangered;
+  font-weight: bold;
+  }
+
+
+.navbarbawah{
+  width: 100%;
+  height: 70px;
+  margin-top: 4.2em;
+  padding-left: 2em;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.totalpembayaran{
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.rp{
+  font-size: 16px;
+  color: orangered;
+  margin-top: 5px;
+}
+
+.navbarbawah a{
+  background: #F79CB1;
+  color: #fff;
+  text-decoration: none;
+  width: 50%;
+  text-align: center;
+  height: 100%;
+  padding: 1.7em 2em;
+}

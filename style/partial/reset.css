@@ -22,6 +22,10 @@ img {
   object-position: center;
 }
 
+a{
+  text-decoration: none;
+}
+
 button {
   border: none;
   outline: none;

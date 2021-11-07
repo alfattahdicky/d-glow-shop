@@ -1,0 +1,296 @@
+@import url('./partial/reset.css');
+@import url('./partial/information.css');
+@import url('./partial/nav.css');
+
+body {
+    background-color: powderblue;
+}
+
+nav{
+    background-color: #8990d3;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+}
+
+nav .logo h3{
+    font-size: 24px;
+}
+
+nav .logo img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    object-position: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #191a19;
+    font-size: 18px;
+}
+
+.contact{
+    background: url('../images/backgroundcontact.png');
+    background-position: center;
+    background-size: 100%;    
+    min-height: 280vh;
+    display: grid; 
+}
+
+.contact img{
+    position: absolute;
+    top: 80px;
+    width: 1000px;
+    height: 500px;
+}
+
+.hero-section h1{
+   max-width: 10px;
+   height: 900px;
+}
+
+.contact img{
+ float: left;
+}
+.contact title{
+   float: right;
+   margin-top: 100px;
+   margin-bottom: 100px;
+   margin-right: 150px;
+   margin-left: 80px;
+  }
+
+
+.wrapper-title {
+    width: 900px;
+    height: 80px;
+}
+
+.title h1{
+border: 10px solid transparent;
+text-align: center;
+margin: auto;
+
+
+}
+
+
+.title p{
+    border: auto solid transparent;
+    text-align: center;
+    margin: auto;
+}
+
+
+div .image1 {
+    width: 30px;
+    height: 30px;
+    object-fit: border;
+    object-position: center;
+    position: static;
+}
+
+
+
+.image1{
+    border: 10px solid transparent;
+  padding: 15px;
+
+}
+
+.box{
+    display: fixed;
+}
+
+.email{
+    background: #ffff;
+    width: 350px;
+    height: 350px;
+    float: left;
+    margin: 25px 50px 75px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.iconemail{
+    height: 200px;
+    width: 200px;
+    border: solid transparent;
+    margin: auto;
+    background-image: url("../icons/emailrev.png");
+    background-size: 200px;
+}
+
+.email.h2{
+    font-weight: bold;
+    font-size: 24px;
+}
+.telepon{
+    background: #ffff;
+    width: 350px;
+    height: 350px;
+    float: right;
+    margin: 25px 50px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+
+.iconemail2{
+    height: 200px;
+    width: 200px;
+    border: solid transparent;
+    margin: auto;
+    background-image: url("../icons/telepon1-removebg-preview.png");
+    background-size: 200px
+}
+
+.sosmed{
+    background: #ffff;
+    width: 350px;
+    height: 350px;
+    margin: 25px auto;
+    display: flex;
+    border-radius: 25px;
+    font-weight: bold;
+
+}
+
+.item {
+    margin: 25px 100px;
+}
+
+
+
+.iconemail3{
+    height: 110px;
+    width: 110px;
+    border: solid transparent;
+    margin: 25px left auto;
+    background-image: url("../icons/insta2-removebg-preview\ \(1\).png");
+    background-size: 100%;
+
+
+    
+}
+
+.instaheader{
+    float: right;
+    display: table;
+    font-weight: bolder;
+   
+    
+}
+
+.span{
+    display: table-cell;
+    vertical-align: left;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.fb{
+    height: 110px;
+    width: 110px;
+    border: solid transparent;
+    background-image: url("../icons/fbrev-removebg-preview\ \(1\).png");
+    background-size: 100%;
+    margin : auto;
+    
+}
+.fbheader{
+    float: right;
+    display: table;
+    font-weight: bolder; 
+}
+
+.twitter{
+    height: 110px;
+    width: 110px;
+    border: solid transparent;
+    background-image: url("../icons/twitter__1_-removebg-preview\ \(1\).png");
+    background-size: 100%;
+    
+}
+.twitheader{
+    float: right;
+    display: table;
+    font-weight: bolder; 
+}
+
+
+.email:nth-child(1){
+    background: #fffF;
+}
+
+.telepon:nth-child(2){
+    background: #fffF;
+}
+
+.sosmed:nth-child(3){
+    background: #fffF;
+}
+
+.box2{
+    display: flex;
+}
+
+.address{
+    background: #ffff;
+    width: 600px;
+    height:450px;
+    background-position: center;
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.iconemail4{
+    height: 100px;
+    width: 100px;
+    border: solid transparent;
+    margin: auto;
+    background-image: url("../icons/location-removebg-preview\ \(1\).png");
+    background-size: 100%;
+}
+
+.iconemail4 .h2{
+    vertical-align: middle;
+}
+.basemap{
+    height: 200px;
+    width: 300px;
+    border: solid transparent;
+    margin: 40px auto;
+    background-image: url("../icons/alamatpnj.png");
+    background-size: 150%;
+}
+
+.email.h2{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.email:nth-child(4){
+    background: #fffF;
+}
+
+footer {
+    padding: 2em 0;
+}
