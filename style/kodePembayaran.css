@@ -1,0 +1,113 @@
+@import url('./partial/nav.css');
+@import url('./partial/reset.css');
+
+
+main {
+  display: grid;
+  justify-items: center;
+  padding: 7.5em 0 1em;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 0 3em;
+}
+
+.container .detail {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.274);
+  width: 350px;
+  padding: 1.7em 1.5em;
+}
+
+.detail h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.4em;
+}
+
+.detail p {
+  margin-bottom: 0.3em;
+  font-size: 1.1em;
+}
+.detail .transfer {
+  padding-top: 0.5em;
+}
+
+.detail h4 {
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+.detail .pembayaran {
+  border-top: 1px solid #C1C1C1;
+  border-bottom: 1px solid #C1C1C1;
+  padding:0.5em 0;
+}
+
+.detail .brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail .total-pembayaran {
+  border-bottom: 1px solid #C1C1C1;
+  padding: 0.5em 0;
+}
+
+.addition .order{
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.274);
+  border-radius: 20px;
+  width: 280px;
+  padding: 1.2em 1.3em;
+  margin-bottom: 2em;
+}
+
+.addition .order h4 {
+  font-size: 1.5em;
+}
+
+.addition .order p {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+}
+
+.addition .order p:last-child {
+  margin-top: 1em;
+}
+
+.addition .order p:last-child span {
+  margin-left: 0.5em;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.addition a {
+  color: #000;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.315);
+  display: inline-block;
+  padding: 1.2em 1.5em;
+  border-radius: 20px;
+  transition: box-shadow .3s ease-in, background-color .2s ease-in-out;
+}
+
+.addition a:hover {
+  background-color: #8990D3;
+  box-shadow: none;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 1.1em;
+  background-color: #D8ABC8;
+}
