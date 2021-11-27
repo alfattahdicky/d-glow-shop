@@ -11,6 +11,59 @@
 </head>
 
 <body>
+    <?php 
+        $products = [
+            [
+                "id" => 1,
+                "name" => 'Lotion',
+                "branch" => 'Jakarta',
+                "price" => '50.000',
+                "sold" => 50,
+                "image" => 'lotion.png',
+            ],
+            [
+                "id" => 2,
+                "name" => 'Essence Wajah',
+                "branch" => 'Bandung',
+                "price" => '65.000',
+                "sold" => 83,
+                "image" => 'essence.png',
+            ],
+            [
+                "id" => 3,
+                "name" => 'Serum Wajah',
+                "price" => '70.000',
+                "branch" => 'Yogyakarta',
+                "sold" => 85,
+                "image" => 'serum-wajah.png',
+            ],
+            [
+                "id" => 4,
+                "name" => 'Toner',
+                "branch" => 'Kediri',
+                "price" => '40.000',
+                "sold" => 150,
+                "image" => 'toner.png',
+            ],
+            [
+                "id" => 5,
+                "name" => 'Cleansing Oil',
+                "branch" => 'Tangerang',
+                "price" => '45.000',
+                "sold" => 83,
+                "image" => 'cleansing.png',
+            ],
+            [
+                "id" => 6,
+                "name" => 'Krim Wajah',
+                "branch" => 'Cirebon',
+                "price" => '50.000',
+                "sold" => 97,
+                "image" => 'krim-wajah.png',
+            ],
+        ]
+    ?>
+
     <header>
         <!-- Navbar -->
         <nav class="navbar-desktop">
@@ -115,107 +168,21 @@
             <img src="../../images/banner2.png">
         </div>
         <div class="list-produk">
-            <div class="product">
-                <a href="">
-                    <img src="../../images/lotion.png" alt="lotion" class="image">
-                    <div class="text">
-                        <p>Lotion</p>
-                        <h1>Rp. 50.000</h1>
-                        <p>Cabang Jakarta</p>
-                        <span><img src="../../icons/star.png" alt="">| Terjual 50</span>
-                    </div>
-                </a>
-            </div>
-            <div class="product">
-                <a href="">
-                    <img src="../../images/essence.png" alt="essence" class="image">
-                    <div class="text">
-                        <p>Essence Wajah</p>
-                        <h1>Rp.65.000</h1>
-                        <p>Cabang Jawa Barat</p>
-                        <span><img src="../../icons/star.png" alt="">| Terjual 50</span>
-                    </div>
-                </a>
-            </div>
-            <div class="product">
-                <a href="../product/detail.html">
-                    <img src="../../images/Produk 4.png" alt="" class="image">
-                    <div class="text">
-                        <p>Serum Wajah</p>
-                        <h1>Rp.70.000</h1>
-                        <p>Cabang Jawa tengah</p>
-                        <span><img src="../../icons/star.png" alt="">| Terjual 85</span>
-                    </div>
-                </a>
-            </div>
-            <div class="product">
-                <a href="">
-                    <img src="../../images/toner.png" alt="" class="image">
-                    <div class="text">
-                        <p>Toner</p>
-                        <h1>Rp.40.000</h1>
-                        <p>Cabang Jawa Barat</p>
-                        <span><img src="../../icons/star.png" alt="">| Terjual 150</span>
-                    </div>
-                </a>
-            </div>
-            <div class="product">
-                <a href="">
-                    <img src="../../images/cleansing.png" alt="" class="image">
-                    <div class="text">
-                        <p>Cleansing Oil</p>
-                        <h1>Rp.45.000</h1>
-                        <p>Cabang Tangerang</p>
-                        <span><img src="../../icons/star.png" alt="">| Terjual 83</span>
-                    </div>
-                </a>
-            </div>
-            <div class="product">
-                <a href="">
-                    <img src="../../images/serum-wajah.png" alt="" class="image">
-                    <div class="text">
-                        <p>Serum Wajah</p>
-                        <h1>Rp.80.000</h1>
-                        <p>Cabang Jakarta</p>
-                        <span><img src="../../icons/star.png" alt="">| Terjual 65</span>
-                    </div>
-                </a>
-            </div>
-            <div class="product">
-                <a href="">
-                    <img src="../../images/krim-wajah.png" alt="" class="image">
-                    <div class="text">
-                        <p>Krim Wajah</p>
-                        <h1>Rp.50.000</h1>
-                        <p>Cabang Tangerang</p>
-                        <span><img src="../../icons/star.png" alt="">| Terjual 97</span>
-                    </div>
-                </a>
-            </div>
-
-            <div class="product">
-                <a href="">
-                    <img src="../../images/sunscreen.png" alt="" class="image">
-                    <div class="text">
-                        <p>Sun Screen</p>
-                        <h1>Rp.70.000</h1>
-                        <p>Cabang Jawa Timur</p>
-                        <span><img src="../../icons/star.png" alt="">| Terjual 61</span>
-                    </div>
-                </a>
-            </div>
-            <div class="product">
-                <a href="">
-                    <img src="../../images/facial-wash.png" alt="" class="image">
-                    <div class="text">
-                        <p>Face Wash</p>
-                        <h1>Rp.30.000</h1>
-                        <p>Cabang Jakarta</p>
-                        <span><img src="../../icons/star.png" alt="">| Terjual 120</span>
-                    </div>
-                </a>
-            </div>
+            <?php foreach($products as $product) : ?>
+                <div class="product">
+                    <a href="">
+                        <img src="../../images/<?= $product['image'] ?>" alt="lotion" class="image">
+                        <div class="text">
+                            <p><?= $product['name'] ?></p>
+                            <h1>Rp. <?= $product['price'] ?></h1>
+                            <p>Cabang <?= $product['branch'] ?></p>
+                            <span><img src="../../icons/star.png" alt="">| Terjual <?= $product['sold'] ?></span>
+                        </div>
+                    </a>
+                </div>
+            <?php endforeach?>
         </div>
+        
         <!-- Information  -->
         <section class="information">
             <div class="wrapper">
